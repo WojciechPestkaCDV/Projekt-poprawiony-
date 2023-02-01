@@ -1,0 +1,12 @@
+@media (max-width: 450px) {
+    .show {
+        position: relative;
+        /* display: block; */
+        /* background-color: red; */
+        display: block;
+    }
+    .center {
+        top: 400px;
+    }
+    
+}

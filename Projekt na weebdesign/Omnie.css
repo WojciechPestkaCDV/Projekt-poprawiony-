@@ -1,0 +1,8 @@
+@media (max-width: 450px) {
+    .center {
+        top: 770px;
+    }
+    h1 {
+        font-size: 3em; 
+    }
+}

@@ -1,0 +1,66 @@
+.col-6 {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    /* background-color: aqua; */
+    border: 1px rgb(219, 219, 219) solid;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: left;
+    transition: scale 0.5s;
+}
+
+.col-6:hover {
+    scale: 110%;
+}
+
+.center {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skile {
+    height: 20px;
+    border: 1px black solid;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.skil-content {
+    background-color: rgb(82, 82, 82);
+    /* width: 100%; */
+    height: 100%;
+    overflow: hidden;
+    /* box-shadow: inset rgb(215, 243, 214) -5px -5px 10px; */
+    text-align: center;
+    animation: skile 1s ease-out;
+    color: azure;
+}
+
+@keyframes skile {
+    from {
+      transform: translate(-150px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0px);
+      opacity: 1;
+    }
+}
+
+/* @media (max-width: 550px) {
+    .center {
+        top: 720px;
+        position: absolute;
+    }
+} */
+
+.education span {
+    font-weight: bold;
+}

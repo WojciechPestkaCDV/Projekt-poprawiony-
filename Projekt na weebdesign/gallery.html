@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-3">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porfolio Wojciech Pestka</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha334-r4NyP46KrjDleawBgD5tp3Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha334-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha334-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,300;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,300&display=swap" rel="stylesheet">
+        <script src="./politykaprywatnosci.js"></script>
+        <link rel="stylesheet" href="./Omnie.css">
+        <link rel="stylesheet" href="gallery.css">
+        <!-- <script src="./gallery.js"></script> -->
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-sm navbar-light bg-transparent" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" id="tytul" href="./index.html">Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" class="navbar navbar-expand-lg navbar-light bg-light mx-auto" id="navbarID">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="./Omnie.html">O mnie</a>
+                            <a class="nav-link active" aria-current="page" href="./CV.html">CV</a>
+                            <a class="nav-link active" aria-current="page" href="./mojeprojekty.html">Moje Projekty</a>
+                            <a class="nav-link active" aria-current="page" href="./wspolpraca.html">Współpraca</a>
+                            <a class="nav-link active" aria-current="page" href="./kontakt.html">Kontakt</a>
+                            <a class="nav-link active" aria-current="page" href="./gallery.html" style="background-color: rgba(0, 0, 0, 0.05);">Galeria</a>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <br>
+            <h3>Zapraszam do zapoznania się z moimi projektami UI</h3>
+            <br>
+            <button id="close-button" class="button" style="display: none;">Zamknij</button>
+        <!-- <div class="center" style="animation: pojawianietextu 0.7s ease-in-out;"> -->
+            <div class="container" style="animation: pojawianietextu 0.7s ease-in-out;">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./gallery/img1.jpg" alt="Image 1" id="image" class="image">
+                    <!-- <button id="close-button" class="button" style="display: none;">Close</button> -->
+                  </div>
+                  <div class="col-4">
+                    <img src="./gallery/img2.jpg" alt="Image 2" id="image2" class="image">
+                    <!-- <button id="close-button2" class="button" style="display: none;">Close</button> -->
+                  </div>
+                  <div class="col-4">
+                    <img src="./gallery/img3.jpg" alt="Image 3" id="image3" class="image">
+                    <!-- <button id="close-button3" class="button" style="display: none;">Close</button> -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./gallery/img5.jpg" alt="Image 4" id="image4" class="image">
+                    <!-- <button id="close-button4" class="button" style="display: none;">Close</button> -->
+                  </div>
+                  <div class="col-4">
+                    <img src="./gallery/img6.jpg" alt="Image 5" id="image5" class="image">
+                    <!-- <button id="close-button5" class="button" style="display: none;">Close</button> -->
+                  </div>
+                  <div class="col-4">
+                    <img src="./gallery/img7.jpg" alt="Image 6" id="image6" class="image">
+                    <!-- <button id="close-button6" class="button" style="display: none;">Close</button> -->
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./gallery/img8.jpg" alt="Image 7" id="image7" class="image">
+                    <!-- <button id="close-button7" class="button" style="display: none;">Close</button> -->
+                  </div>
+                  <div class="col-4">
+                    <img src="./gallery/img9.jpg" alt="Image 9" id="image9" class="image">
+                    <!-- <button id="close-button4" class="button" style="display: none;">Close</button> -->
+                  </div>
+                  <div class="col-4">
+                    <img src="./gallery/img4.jpg" alt="Image 8" id="image8" class="image">
+                    <!-- <button id="close-button9" class="button" style="display: none;">Close</button> -->
+                  </div>
+                </div>
+              </div>
+              
+        <!-- </div> -->
+        <script>
+            // const image = document.getElementById("image");
+            let image = document.getElementById("image");
+            const closeButton = document.getElementById("close-button");
+
+            image.addEventListener("click", function() {
+            image.style.position = "fixed";
+            image.style.top = "50%";
+            image.style.left = "50%";
+            image.style.transform = "translate(-50%, -50%)";
+            image.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image.style.position = "static";
+            image.style.top = "";
+            image.style.left = "";
+            image.style.transform = "";
+            image.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+
+            let image2 = document.getElementById("image2");
+            // const closeButton2 = document.getElementById("close-button2");
+
+            image2.addEventListener("click", function() {
+            image2.style.position = "fixed";
+            image2.style.top = "50%";
+            image2.style.left = "50%";
+            image2.style.transform = "translate(-50%, -50%)";
+            image2.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image2.style.position = "static";
+            image2.style.top = "";
+            image2.style.left = "";
+            image2.style.transform = "";
+            image2.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+
+            let image3 = document.getElementById("image3");
+
+            image3.addEventListener("click", function() {
+            image3.style.position = "fixed";
+            image3.style.top = "50%";
+            image3.style.left = "50%";
+            image3.style.transform = "translate(-50%, -50%)";
+            image3.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image3.style.position = "static";
+            image3.style.top = "";
+            image3.style.left = "";
+            image3.style.transform = "";
+            image3.style.zIndex = "";
+            closeButton.style.display = "none";
+            }
+            );
+
+            let image4 = document.getElementById("image4");
+
+            image4.addEventListener("click", function() {
+            image4.style.position = "fixed";
+            image4.style.top = "50%";
+            image4.style.left = "50%";
+            image4.style.transform = "translate(-50%, -50%)";
+            image4.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image4.style.position = "static";
+            image4.style.top = "";
+            image4.style.left = "";
+            image4.style.transform = "";
+            image4.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+
+            let image5 = document.getElementById("image5");
+
+            image5.addEventListener("click", function() {
+            image5.style.position = "fixed";
+            image5.style.top = "50%";
+            image5.style.left = "50%";
+            image5.style.transform = "translate(-50%, -50%)";
+            image5.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image5.style.position = "static";
+            image5.style.top = "";
+            image5.style.left = "";
+            image5.style.transform = "";
+            image5.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+
+
+            let image6 = document.getElementById("image6");
+
+            image6.addEventListener("click", function() {
+            image6.style.position = "fixed";
+            image6.style.top = "50%";
+            image6.style.left = "50%";
+            image6.style.transform = "translate(-50%, -50%)";
+            image6.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image6.style.position = "static";
+            image6.style.top = "";
+            image6.style.left = "";
+            image6.style.transform = "";
+            image6.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+
+
+            let image7 = document.getElementById("image7");
+
+            image7.addEventListener("click", function() {
+            image7.style.position = "fixed";
+            image7.style.top = "50%";
+            image7.style.left = "50%";
+            image7.style.transform = "translate(-50%, -50%)";
+            image7.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image7.style.position = "static";
+            image7.style.top = "";
+            image7.style.left = "";
+            image7.style.transform = "";
+            image7.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+
+            let image9 = document.getElementById("image9");
+
+            image9.addEventListener("click", function() {
+            image9.style.position = "fixed";
+            image9.style.top = "50%";
+            image9.style.left = "50%";
+            image9.style.transform = "translate(-50%, -50%)";
+            image9.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image9.style.position = "static";
+            image9.style.top = "";
+            image9.style.left = "";
+            image9.style.transform = "";
+            image9.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+
+
+            let image8 = document.getElementById("image8");
+
+            image8.addEventListener("click", function() {
+            image8.style.position = "fixed";
+            image8.style.top = "50%";
+            image8.style.left = "50%";
+            image8.style.transform = "translate(-50%, -50%)";
+            image8.style.zIndex = "3";
+            closeButton.style.display = "block";
+            closeButton.style.zIndex = "4";
+            closeButton.style.position = "fixed";
+            });
+            closeButton.addEventListener("click", function() {
+            image8.style.position = "static";
+            image8.style.top = "";
+            image8.style.left = "";
+            image8.style.transform = "";
+            image8.style.zIndex = "";
+            closeButton.style.display = "none";
+            });
+        </script>
+    </body>
+</html>

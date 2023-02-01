@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Porfolio Wojciech Pestka</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./CV.css">
+        <script src="CV.js"></script>
+        <script src="./politykaprywatnosci.js"></script>
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-sm navbar-light bg-transparent" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" id="tytul" href="./index.html">Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" class="navbar navbar-expand-lg navbar-light bg-light mx-auto" id="navbarID">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="./Omnie.html">O mnie</a>
+                            <a class="nav-link active" aria-current="page" href="./CV.html" style="background-color: rgba(0, 0, 0, 0.05);">CV</a>
+                            <a class="nav-link active" aria-current="page" href="./mojeprojekty.html">Moje Projekty</a>
+                            <a class="nav-link active" aria-current="page" href="./wspolpraca.html">Współpraca</a>
+                            <a class="nav-link active" aria-current="page" href="./kontakt.html">Kontakt</a>
+                            <a class="nav-link active" aria-current="page" href="./gallery.html">Galeria</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        <div class="center" style="animation: pojawianietextu 0.7s ease-in-out;">
+            
+            <h1>CV</h1>
+            <h4>Zapraszam do zpozanania się z moimi kompentacjami</h4>
+            <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <h4>Skile</h4><br>
+                    JS
+                    <div class="skile" >
+                        <div class="skil-content" id="JS">70</div>
+                        <div class="tenpasek"></div>
+                    </div>
+                    HTML5
+                    <div class="skile" >
+                        <div class="skil-content" id="HTML">30</div>
+                    </div>
+                    CSS3
+                    <div class="skile" >
+                        <div class="skil-content" id="CSS">75</div>
+                    </div>
+                    React.js
+                    <div class="skile" >
+                        <div class="skil-content" id="R">60</div>
+                    </div>
+                    Vue
+                    <div class="skile" >
+                        <div class="skil-content" id="vue">15</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <h4>Edukacja</h4><br>
+                        <div class="education">
+                            <span>Collegium Da Vinci Poznań</span><br>
+                            2021-teraz <br>
+                            Studia inżynierskie z informatyki 
+                        </div>
+                        <br>
+                        <div class="education">
+                            <span>ZSP 2 Korotszyn</span><br>
+                            2017-2021 <br>
+                            Technikum na kierunki technik informatyk  
+                        </div>
+
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+        <script>
+            // weoblicz();
+            const getValue = () => {
+            const element = document.querySelector('#JS');
+            const value = element.textContent;
+            return value;
+            }
+
+            const value = getValue();
+            const values = value+"%";
+            console.log(values); 
+            const elementy = document.querySelector('#JS');
+            elementy.style.width = values;
+
+            const getValueH = () => {
+            const elementH = document.querySelector('#HTML');
+            const valueH = elementH.textContent;
+            return valueH;
+            }
+
+            const valueH = getValueH();
+            const valuesH = valueH+"%";
+            console.log(valuesH); 
+            const elementyH = document.querySelector('#HTML');
+            elementyH.style.width = valuesH;
+
+            const getValueC = () => {
+            const elementC = document.querySelector('#CSS');
+            const valueC = elementC.textContent;
+            return valueC;
+            }
+
+            const valueC = getValueC();
+            const valuesC = valueC+"%";
+            console.log(valuesC); 
+            const elementyC = document.querySelector('#CSS');
+            elementyC.style.width = valuesC;
+
+            const getValueR = () => {
+            const elementR = document.querySelector('#R');
+            const valueR = elementR.textContent;
+            return valueR;
+            }
+
+            const valueR = getValueR();
+            const valuesR = valueR+"%";
+            console.log(valuesR); 
+            const elementyR = document.querySelector('#R');
+            elementyR.style.width = valuesR;
+
+            const getValuev = () => {
+            const elementv = document.querySelector('#vue');
+            const valuev = elementv.textContent;
+            return valuev;
+            }
+
+            const valuev = getValuev();
+            const valuesv = valuev+"%";
+            console.log(valuesv); 
+            const elementyv = document.querySelector('#vue');
+            elementyv.style.width = valuesv;
+            
+        </script>
+    </body>
+</html>

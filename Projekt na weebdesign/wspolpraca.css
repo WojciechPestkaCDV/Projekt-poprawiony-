@@ -1,0 +1,19 @@
+.kalkulator {
+    position: relative;
+    top: 80px;
+}
+
+#wpisywanie {
+    width: 400px;
+    /* text-align: left; */
+}
+
+@media (max-width: 450px) {
+    .center {
+        top: 90px;
+    }
+}
+
+button {
+    padding: 5px;
+}

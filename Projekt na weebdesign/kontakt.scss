@@ -1,0 +1,159 @@
+// body {
+//     // overflow: hidden;
+// }
+
+#contact-form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: sans-serif;
+    height: 620px;
+}
+  
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+  
+#contact-form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+#contact-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+  
+#response {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+}
+  
+#response.success {
+    color: #4CAF50;
+}
+  
+#response.error {
+    color: #FF0000;
+}
+  
+.icons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+@media (max-width: 450px) {
+    .icons {
+        position: absolute;
+        top: 100vh;
+        display: none;
+    }
+    .center {
+        width: 350px;
+    }
+    span {
+        left: 30%;
+    }
+}
+
+.twitter {
+    width: 48px;
+    height: 48px;
+    filter: grayscale(0.9);
+    animation: ikonki 0.2s linear;
+    background-image: url("./icons/twitter.png");
+&:hover {
+    background-image: url("./icons/twitter.gif");
+    filter: grayscale(0);
+}
+}
+
+
+.instagram {
+    width: 48px;
+    height: 48px;
+    filter: grayscale(0.9);
+    animation: ikonki 0.35s linear;
+    background-image: url("./icons/instagram.png");
+&:hover {
+        filter: grayscale(0);
+        background-image: url("./icons/instagram.gif");
+    }
+}
+
+
+
+.linkedin {
+    width: 48px;
+    height: 48px;
+    filter: grayscale(0.9);
+    animation: ikonki 0.4s linear;
+    background-image: url("./icons/linkedin.png");
+&:hover {
+    filter: grayscale(0);
+    background-image: url("./icons/linkedin.gif");
+}
+}
+
+.facebook {
+    width: 48px;
+    height: 48px;
+    filter: grayscale(0.9);
+    animation: ikonki 0.25s linear;
+    background-image: url("./icons/facebook.png");
+&:hover {
+        filter: grayscale(0);
+        background-image: url("./icons/facebook.gif");
+    }
+}
+
+
+
+.github {
+    width: 48px;
+    height: 48px;
+    filter: grayscale(0.9);
+    animation: ikonki 0.3s linear;
+    background-image: url("./icons/github.png");
+&:hover {
+        filter: grayscale(0);
+        background-image: url("./icons/github.gif");
+    }
+}
+
+@keyframes ikonki {
+    from {
+        transform: translate(70px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}
+
+span {
+    font-size: 0.8rem;
+    position: relative;
+    left: 40%;
+}
